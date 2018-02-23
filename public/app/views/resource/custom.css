@@ -1,0 +1,54 @@
+.btn-todoadd {
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #611BBD;
+	*background-color: #611BBD;
+	background-image: -moz-linear-gradient(top, #AF4CE8, #611BBD);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#AF4CE8), to(#611BBD));
+	background-image: -webkit-linear-gradient(top, #AF4CE8, #611BBD);
+	background-image: -o-linear-gradient(top, #AF4CE8, #611BBD);
+	background-image: linear-gradient(to bottom, #AF4CE8, #611BBD);
+	background-repeat: repeat-x;
+	border-color: #611BBD;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AF4CE8', endColorstr='#611BBD', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	width: 100%;
+	font-size: 16px;
+	border-radius: 10px;
+}
+.btn-todoadd:hover,
+.btn-todoadd:focus,
+.btn-todoadd:active,
+.btn-todoadd.active,
+.btn-todoadd.disabled,
+.btn-todoadd[disabled] {
+	color: #FFFFFF;
+	background-color: #611BBD;
+	*background-color: #003bb3;
+}
+
+body{
+	background-image: url("provided/background.jpg");
+	color: #fff;
+}
+
+.todo-box{
+	margin-top: 20px;
+}
+
+.table{
+	color: #000;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+.edit-task{
+	color: #609;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href='/'>
+	<title>User Story</title>
+
+	
+	
+	<link rel="stylesheet" href="app/views/resource/bootstrap.min.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="app/views/resource/jquery-1.10.2.js"></script>
+  <script src="app/views/resource/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="app/views/resource/jquery-ui.css" />
+    <script src="app/views/resource/jquery-ui.js"></script>
+
+	<script src="app/views/resource/angular.js">     </script>
+	<script src="app/views/resource/angular-route.js"></script>
+	<script src="app/views/resource/angular-resource.js"></script>
+	
+
+	<!-- Services-->
+	<script type="text/javascript" src="app/services/todoService.js"></script>
+	
+
+	<!-- Controllers-->
+	<script type="text/javascript" src="app/controllers/todoCtrl.js"></script>
+
+	<script type="text/javascript" src='app/app.routes.js'></script>
+	<script type="text/javascript" src='app/app.js'></script>
+
+</head>
+<body ng-app="MyApp">
+<!-- 
+<header>
+
+	<div class="navbar navbar-default">
+	
+		<div class="container">
+
+
+			<ul class="nav navbar-nav">
+				<li><h3><a href="/">Project Management</a></h3></li>
+			</ul>
+			
+			
+		</div>
+		
+	</div>
+
+</header> -->
+
+<main class="container">
+
+	<div ng-view> </div>
+
+</main>
+
+</body>
+</html>
