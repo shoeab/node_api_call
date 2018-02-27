@@ -6,11 +6,25 @@ angular.module('todoCtrl', ['todoService'])
 	$scope.responses = []; // Declaring responses variable as array
 	$scope.post = {};
 
-	$http.get("/api/all")
+	var req = {
+		method: 'GET',
+		url: '/api/all',
+		headers: {
+		   'Content-Type': undefined
+		}
+	}
+
+	$http(req)
+	.then(function(response){
+			$scope.post = response.data;
+	        console.log($scope.post);
+	    });
+
+	/*$http.get("/api/all")
 	    .then(function(response) {
 	        $scope.post = response.data;
 	        console.log($scope.post);
-	    });
+	    });*/
 
 	Todo.endpoint() //Call factory service function name: endpoint
 			.success(function(data){
